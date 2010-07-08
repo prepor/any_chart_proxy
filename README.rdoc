@@ -1,17 +1,30 @@
 = any_chart_proxy
 
-Description goes here.
+=== Rails 2
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+Just add
 
+  gem.config 'any_chart_proxy'
+
+to environment.rb
+
+=== Rails 3
+
+To Gemfile
+
+  gem 'any_chart_proxy'
+
+to routes.rb
+
+  match "/any_chart" => AnyChartProxy.new
+
+=== Rack app (like Sinatra) 
+
+To *.ru file:
+
+  match "/any_chart" => AnyChartProxy.new
+
+  
 == Copyright
 
 Copyright (c) 2010 Andrew Rudenko. See LICENSE for details.
