@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{any_chart_proxy}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrew Rudenko"]
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "any_chart_proxy.gemspec",
      "app/metal/any_chart_metal_proxy.rb",
      "lib/any_chart_proxy.rb",
      "test/helper.rb",
