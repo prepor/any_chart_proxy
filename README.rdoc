@@ -1,5 +1,7 @@
 = any_chart_proxy
 
+  gem install any_chart_proxy
+
 === Rails 2
 
 Just add
@@ -22,8 +24,11 @@ to routes.rb
 
 To *.ru file:
 
-  match "/any_chart" => AnyChartProxy.new
+  run AnyChartProxy.new
 
+=== Usage
+
+  Proxy url is '/any_chart'
   
 == Copyright
 
